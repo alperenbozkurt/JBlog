@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <div class="ust">
+      <div class="ortalaAna">
+        <div class="baslikAna">
+          {{ site.title }}
+        </div>
+        {% include nav.html %}
+      </div>
+    </div>
+    <div class="ortalaAna">
+      <div class="yazilar">
+        {% for post in site.posts %}
+          {% if post.project == null %}
+            <div class="yazi">
+              <div class="ustr">
+                <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+                <div class="yazibilgisi">
+                  {{ post.date | date_to_string }} tarihinde yayınlandı.
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

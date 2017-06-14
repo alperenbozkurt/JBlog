@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <div class="ust">
+      <div class="ortalaAna">
+        <div class="baslikAna">
+          {{ site.title }}
+        </div>
+        {% include nav.html %}
+      </div>
+    </div>
+    <div class="ortalaAna">
+      <div class="programlar">
+        {% for post in site.posts %}
+          {% if post.project %}
+            <div class="program">
+              <div class="urunResmi">
+                <img src="{{ post.image }}" alt="">
+              </div>
+              <div class="urunAdi">
+                <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+              </div>
+              <div class="aciklamaUrun">
+                {{ post.excerpt }}
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

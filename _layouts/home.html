@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  {% include head-home.html %}
+  <body>
+    <div class="baslik">
+      {{ site.title }}
+    </div>
+    <div class="orta">
+      <div class="ortala">
+        <div class="resim">
+          <img alt="{{ site.title }}" src="{{ site.url }}/{{ site.picture }}">
+        </div>
+        {% include nav-home.html %}
+        <div class="aciklamalar">
+          {{ site.description }}
+        </div>
+      </div>
+    </div>
+    {% include social-links.html %}
+  </body>
+</html>

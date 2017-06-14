@@ -1,0 +1,769 @@
+//@extend-elements
+%extend_1 {
+	font-size: 12px;
+	font-size: .75rem;
+	line-height: 1.5;
+	white-space: nowrap;
+	margin: 0 2px;
+	padding: 0 5px;
+	border: 0;
+	background-color: $color_12;
+	border-radius: 3px;
+}
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif");
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900");
+
+$bg-blue: rgba(52, 152, 219, 1);
+$mainColor: #ecf0f1;
+$color2: rgba(52, 152, 219, .6);
+
+body {
+  background: $bg-blue;
+  margin: 0px;
+}
+
+.bisey {
+  background: red;
+}
+
+.orta {
+  background: $mainColor;
+  height: 230px;
+  width: auto;
+  margin-top: 10px;
+  box-shadow: 0px 0px 20px 2px rgba(71, 71, 71, 1);
+  animation-name: orta;
+  animation-duration: 1.2s;
+  animation-fill-mode:forwards;
+}
+
+.baslik {
+  font-size: 60px;
+  text-align: center;
+  font-family: "Lobster", cursive;
+  text-shadow: 1px 1px 5px #000;
+  color: #FFF;
+  margin-top: 130px;
+	opacity: 0;
+  animation-name: baslik;
+	animation-delay: 1.2s;
+  animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+.ortala {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+}
+
+.resim {
+  margin-top: 30px;
+  width: 170px;
+  height: 170px;
+  float: left;
+  border-radius: 90px;
+  background: $bg-blue;
+  box-shadow: 0px 0px 20px 2px rgba(82, 82, 82, 1) inset;
+	opacity: 0;
+	animation: baslik;
+	animation-delay: 1s;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+.resim {
+  margin-top: 30px;
+  width: 170px;
+  height: 170px;
+  float: left;
+  border-radius: 90px;
+  background: $bg-blue;
+  box-shadow: 0px 0px 20px 2px rgba(82, 82, 82, 1) inset;
+	img	{
+  	border-radius: 90px;
+	  width: 170px;
+	  height: 170px;
+	}
+}
+
+ul.menu {
+  font-size: 28px;
+  margin-top: 75px;
+  margin-left: 20px;
+  float: left;
+  display: block;
+  list-style: none;
+  height: 50px;
+	opacity: 0;
+	animation-delay: 1s;
+  animation: resim 2s forwards;
+
+  li {
+    float: left;
+    display: block;
+
+    a {
+      padding: 10px;
+      border-radius: 6px;
+      color: $bg-blue;
+      float: left;
+      text-decoration: none;
+      font-family: "Alegreya Sans SC", sans-serif;
+
+      &:hover {
+        padding: 10px;
+        border-radius: 3px;
+        background-color: $bg-blue;
+        text-shadow: 1px 1px 5px #000;
+        color: $mainColor;
+        box-shadow: inset 0px 0px 10px 2px rgba(81, 81, 81, .6);
+        float: left;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.aciklamalar {
+  font-family: "Lobster", cursive;
+  margin-left: 50;
+  float: left;
+  font-size: 20px;
+  margin-top: 25px;
+  color: $color2;
+	opacity: 0;
+	animation-delay: 1s;
+  animation-name: baslik;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes baslik {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes orta {
+  0% {
+    height: 0px;
+    margin-top: 125px;
+  }
+
+  100% {
+    height: 230px;
+    margin-top: 10px;
+  }
+}
+
+@keyframes resim {
+  0% {
+    opacity: 0;
+  }
+
+  66% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.ustr {
+	width: auto;
+	height: 60px;
+}
+.ust {
+  animation-name: ustegel;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  background-color: $mainColor;
+  width: auto;
+  margin-top: 200px;
+  height: 200px;
+  box-shadow: 0px 0px 10px 1px rgba(82, 82, 82, .6);
+}
+
+@keyframes ustegel {
+  0% {
+    height: 200px;
+    margin-top: 120px;
+  }
+
+  100% {
+    height: 70px;
+    margin-top: 0px;
+  }
+}
+
+.baslikAna {
+  font-size: 50px;
+  color: $bg-blue;
+  text-shadow: rgba(255, 255, 255, .2) 3px 2px 3px;
+  float: left;
+  font-family: "Lobster", cursive;
+  animation-name: baslik;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+}
+
+.ortalaAna {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.yazi, .yaziUzun {
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: $mainColor;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px 1px rgba(82, 82, 82, 0.1);
+  font-family: "Roboto Slab", serif;
+  animation-name: baslik;
+	animation-delay: 0.7s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+.programcerceve {
+  width: 990px;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: $mainColor;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px 1px rgba(82, 82, 82, .6);
+  float: left;
+  animation-name: baslik;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+
+  h2 {
+    margin-left: 15px;
+    color: $bg-blue;
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+}
+
+.ustr h2 {
+  margin-left: 15px;
+  color: $bg-blue;
+  float: left;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.yaziUzun h2 {
+  margin-left: 15px;
+  color: #d35400;
+  float: left;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.ustr h2 a, .yaziUzun h2 a {
+  text-decoration: none;
+  color: $bg-blue;
+  float: left;
+  transition-property: color;
+  transition-duration: 1s;
+  transition-delay: 0s;
+}
+
+.ustr h2 a:hover, .yaziUzun h2 a:hover {
+  color: $color2;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+
+.ustr p, .yaziUzun p {
+  padding: 15px;
+  font-size: 15px;
+  color: rgba(82, 82, 82, .8);
+  width: 100%;
+  font-family: "Roboto Slab", serif;
+}
+
+.yazilar {
+  float: left;
+  width: 1000px;
+}
+
+.programim {
+  float: center;
+  width: 1000px;
+}
+
+.yazibilgisi {
+  color: rgba(81, 81, 81, .4);
+  font-size: 12px;
+  float: right;
+	margin-right: 20px;
+	line-height: 60px;
+  font-family: "Lobster", cursive;
+}
+
+.yaziBilgisiUzun {
+  margin-bottom: 0px;
+  color: rgba(81, 81, 81, .4);
+  font-size: 12px;
+  float: right;
+  margin-top: 0px;
+  margin-right: 50px;
+  font-family: "Lobster", cursive;
+}
+
+.yazi hr, .yaziUzun hr {
+	margin: 0px;
+  float: left;
+  width: 95%;
+  margin-left: 20px;
+  border: 1px solid $bg-blue;
+	color: $bg-blue;
+}
+
+.widget {
+  width: 280px;
+  margin-top: 10px;
+  background-color: $mainColor;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px 1px rgba(82, 82, 82, .6);
+  float: right;
+  text-align: center;
+  animation-name: sagx;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+
+  h3 {
+    margin-left: 15px;
+    color: $bg-blue;
+    font-family: "Lobster", cursive;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    animation-name: baslik;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+  }
+
+  li {
+    height: 20px;
+    margin: 5px;
+    list-style: circle;
+    color: $bg-blue;
+
+    a {
+      text-decoration: none;
+      margin: 5px;
+      color: $bg-blue;
+      transition-property: color;
+      transition-duration: .5s;
+      transition-delay: 0s;
+      padding: 2px;
+
+      &:hover {
+        padding: 2px;
+        color: #000;
+        border-radius: 5px;
+        text-decoration: none;
+        background-color: $color2;
+      }
+    }
+  }
+
+  hr {
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid $bg-blue;
+  }
+}
+
+.arama {
+  background-color: #fff;
+  float: right;
+  width: 280px;
+  border-radius: 6px;
+  margin-top: 10px;
+  height: 40px;
+  animation-name: sag;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+}
+
+.aramaKutusu {
+  color: #d35400;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, .01);
+  border: 0px;
+  width: 190px;
+  height: 25px;
+  margin-top: 5px;
+  margin-left: 10px;
+  outline: none;
+  float: left;
+  resize: none;
+  padding: 4px;
+}
+
+.aramaButonu {
+  background-color: transparent;
+  border: 0px;
+  margin-top: 5px;
+  outline: none;
+  float: right;
+  animation-name: baslik;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+ul.menuAna {
+  font-size: 25px;
+  margin-top: 15px;
+  margin-left: 20px;
+  float: left;
+  display: block;
+  list-style: none;
+  height: 50px;
+  animation-name: baslik;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+
+  li {
+    float: left;
+  }
+
+  a {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: $bg-blue;
+    float: left;
+    font-family: "Alegreya Sans SC", sans-serif;
+    text-decoration: none;
+    transition-property: color, border-color;
+    transition-duration: 1s;
+    transition-delay: 0s;
+
+    &:hover {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 5px;
+      border-bottom: 5px solid $color2;
+      color: $color2;
+      float: left;
+      font-family: "Alegreya Sans SC", sans-serif;
+      text-decoration: none;
+    }
+  }
+}
+
+.secili {
+  border-bottom: 5px solid $color2;
+
+  &:hover {
+    border-bottom: 0px solid rgba(0, 0, 0, .6);
+  }
+}
+
+.widget ul {
+  text-align: left;
+  color: rgba(0, 0, 0, .8);
+}
+
+.sag {
+  float: left;
+  width: 280px;
+}
+
+.footer {
+  float: left;
+  margin-top: 20px;
+  width: 100%;
+  font-family: "Lobster", cursive;
+  background: $mainColor;
+  box-shadow: 0px 0px 10px 2px rgba(82, 82, 82, 1);
+  animation-name: ft;
+	animation-delay: 1.2s;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+@keyframes ft {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.copy {
+  font-size: 18px;
+  margin-top: 20px;
+  color: $bg-blue;
+  animation-name: baslik;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+	text-align: center;
+	img	{
+		width: 20px;
+		height: 20px;
+		float: left;
+	}
+}
+
+@keyframes sag {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+
+  50% {
+    opacity: 0;
+    width: 0px;
+  }
+
+  100% {
+    opacity: 1;
+    width: 280px;
+  }
+}
+
+@keyframes sagx {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+
+  50% {
+    opacity: 0;
+    width: 0px;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    width: 280px;
+  }
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(195, 84, 0);
+  border-radius: 15;
+
+  &:hover {
+    background-color: rgb(230, 126, 34);
+  }
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(158, 158, 158);
+}
+
+/* End Scrollbar */
+
+::selection {
+  background: #f39c12;
+
+  /* WebKit/Blink Browsers */
+  color: #000;
+}
+
+.programlar {
+  margin-top: 40px;
+}
+
+.program {
+  background-color: $mainColor;
+  width: 220px;
+  margin: 10px;
+  box-shadow: 0px 0px 10px 1px rgba(82, 82, 82, .6);
+  float: left;
+  animation-name: baslik;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+}
+
+.urunResmi {
+  height: 150px;
+  width: 180px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+	img {
+		  height: 150px;
+		  width: 180px;
+	}
+}
+
+.urunAdi {
+  text-align: center;
+  font-size: 20px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: $bg-blue;
+  font-family: "Alegreya Sans SC", sans-serif;
+}
+
+.fiyatVeOs {
+  text-align: center;
+}
+
+.fiyat {
+  a {
+    margin-left: 30px;
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid $bg-blue;
+    border-radius: 3px;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: .5s;
+    transition-delay: 0s;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $bg-blue;
+      color: $mainColor;
+    }
+  }
+}
+
+.aciklamaUrun {
+  padding: 5px;
+  color: rgba(0, 0, 0, .9);
+  font-size: 13px;
+}
+
+.windows {
+  background-image: url("http://alperenbozkurt.tk/img/Windows.png");
+  background-size: cover;
+  float: right;
+  margin-right: 10px;
+  border-radius: 3px;
+  height: 30px;
+  width: 30px;
+}
+
+/*Programlar.php Bitti
+ *İletişim.php yapılmaya başlandı. */
+
+.iletisim {
+  margin-top: 40px;
+  height: 450px;
+  width: 990px;
+  box-shadow: 0px 0px 10px 1px rgba(82, 82, 82, .6);
+  border-radius: 3px;
+  background-color: $mainColor;
+  animation-name: baslik;
+  animation-duration: 1.3s;
+  animation-fill-mode: forwards;
+}
+
+.hakkimda {
+  width: 990px;
+  float: left;
+  font-size: 18px;
+
+  h2 {
+    padding-top: 20px;
+    padding-left: 20px;
+    color: $bg-blue;
+    font-family: "Lobster", cursive;
+  }
+
+  p {
+    color: rgba(0, 0, 0, .6);
+    padding-left: 10px;
+  }
+}
+
+.iletisimBilgileri {
+  width: 445px;
+  float: left;
+  padding: 10px;
+  text-align: center;
+
+  h3 {
+    padding-left: 10px;
+    color: $bg-blue;
+    font-family: "Lobster", cursive;
+  }
+
+  p {
+    color: rgba(0, 0, 0, .6);
+  }
+}
+
+
+.disqus {
+  padding: 20px;
+  background-color: #FFF;
+  box-shadow: 0px 0px 10px 2px rgba(100, 100, 100, 1);
+}
+
+.social-links {
+	text-align: center;
+  animation-name: baslik;
+	opacity: 0;
+	animation-delay: 1s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+	.fa {
+		margin: 5px;
+		margin-top: 30px;
+		padding: 5px;
+		color: $mainColor;
+	  text-shadow: 1px 1px 5px #000;
+		transition-property: text-shadow;
+	  transition-duration: 0.2s;
+	  transition-delay: 0s;
+		&:hover{
+			color: #FFF;
+		  text-shadow: 1px 1px 10px #000;
+		}
+	}
+}
+.sosyal {
+	.fa {
+		margin-top: 10px !important;
+		color: $bg-blue !important;
+	  text-shadow: 1px 1px 1px rgba(81, 81, 81, 0.3) !important;
+		&:hover{
+		  text-shadow: 1px 1px 4px rgba(81, 81, 81, 1) !important;
+		}
+	}
+}
+.content {
+	padding: 30px;
+}
+.notice {
+    margin-top: 1.5em;
+    padding: .5em 1em;
+    text-indent: 0;
+    @include font-rem(14);
+    background-color: $color_gray;
+    border: 1px solid $color_pink_swan;
+    @include rounded(3px);
+}

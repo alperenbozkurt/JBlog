@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <div class="ust">
+      <div class="ortalaAna">
+        <div class="baslikAna">
+          {{ site.title }}
+        </div>
+        {% include nav.html %}
+      </div>
+    </div>
+    <div class="ortalaAna">
+      <div class="yazilar">
+        <div class="yazi">
+          <div class="ustr">
+            <h2><a href="{{ page.url }}{{ page.url }}">{{ page.title }}</a></h2>
+            <div class="yazibilgisi">
+              {{ page.date | date_to_string }} tarihinde yayınlandı.
+            </div>
+          </div>
+          <hr>
+          <div class="content">
+            {{ content }}
+          </div>
+        </div>
+        {% include scripts.html %}
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
