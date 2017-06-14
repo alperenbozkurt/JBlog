@@ -70,17 +70,37 @@
 
       </div>
     </div>
-
-
-    <div class="wrapper">
-        <div class="title">
-            <h1>404</h1>
-        </div>
-        <div class="article">
+    <div class="ortalaAna">
+      <div class="yazilar">
+        <div class="yazi">
+          <div class="ustr">
+            <h2><a href="/404/404">404</a></h2>
+          </div>
+          <hr>
+          <div class="content">
             <p>There doesn't appear to be anything here. Sorry about that.</p>
 <p>If you've followed a link expecting something to be here, you can <a href="mailto:?subject=Page%20not%20found">contact me</a>.</p>
 
+          </div>
         </div>
+        <script src="http://localhost:4000/assets/js/jquery-1.12.2.min.js"></script>
+<script src="http://localhost:4000/assets/js/jquery.goup.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $.goup({
+        trigger: 500,
+        bottomOffset: 10,
+        locationOffset: 20,
+        containerRadius: 0,
+        containerColor: '#fff',
+        arrowColor: '#000',
+        goupSpeed: 'normal'
+    });
+});
+</script>
+
+
+      </div>
     </div>
         <div class="footer">
       <div class="ortalaAna">
@@ -114,23 +134,6 @@
         </div>
       </div>
     </div>
-
-    <script src="http://localhost:4000/assets/js/jquery-1.12.2.min.js"></script>
-<script src="http://localhost:4000/assets/js/jquery.goup.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-    $.goup({
-        trigger: 500,
-        bottomOffset: 10,
-        locationOffset: 20,
-        containerRadius: 0,
-        containerColor: '#fff',
-        arrowColor: '#000',
-        goupSpeed: 'normal'
-    });
-});
-</script>
-
 
   </body>
 </html>

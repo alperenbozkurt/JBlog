@@ -10,17 +10,20 @@
         {% include nav.html %}
       </div>
     </div>
-
-
-    <div class="wrapper">
-        <div class="title">
-            <h1>{{ page.title }}</h1>
-        </div>
-        <div class="article">
+    <div class="ortalaAna">
+      <div class="yazilar">
+        <div class="yazi">
+          <div class="ustr">
+            <h2><a href="{{ page.url }}{{ page.url }}">{{ page.title }}</a></h2>
+          </div>
+          <hr>
+          <div class="content">
             {{ content }}
+          </div>
         </div>
+        {% include scripts.html %}
+      </div>
     </div>
     {% include footer.html %}
-    {% include scripts.html %}
   </body>
 </html>
