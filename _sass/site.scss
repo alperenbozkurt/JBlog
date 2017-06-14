@@ -622,8 +622,17 @@ ul.menuAna {
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
-  color: $bg-blue;
   font-family: "Alegreya Sans SC", sans-serif;
+	a {
+		color: $bg-blue;
+		transition-property: color;
+		transition-duration: .5s;
+		transition-delay: 0s;
+		&:hover {
+			cursor: pointer;
+			color: $color2;
+		}
+	}
 }
 
 .fiyatVeOs {
