@@ -602,6 +602,11 @@ ul.menuAna {
   animation-name: baslik;
   animation-duration: 1.2s;
   animation-fill-mode: forwards;
+  animation-name: baslik;
+	opacity: 0;
+	animation-delay: 1s;
+  animation-duration: 1.6s;
+  animation-fill-mode: forwards;
 }
 
 .urunResmi {
