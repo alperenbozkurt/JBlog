@@ -71,15 +71,6 @@ body {
 	animation-delay: 1s;
 	animation-duration: 2s;
 	animation-fill-mode: forwards;
-}
-.resim {
-  margin-top: 30px;
-  width: 170px;
-  height: 170px;
-  float: left;
-  border-radius: 90px;
-  background: $bg-blue;
-  box-shadow: 0px 0px 20px 2px rgba(82, 82, 82, 1) inset;
 	img	{
   	border-radius: 90px;
 	  width: 170px;
@@ -87,43 +78,6 @@ body {
 	}
 }
 
-ul.menu {
-  font-size: 28px;
-  margin-top: 75px;
-  margin-left: 20px;
-  float: left;
-  display: block;
-  list-style: none;
-  height: 50px;
-	opacity: 0;
-	animation-delay: 1s;
-  animation: resim 2s forwards;
-
-  li {
-    float: left;
-    display: block;
-
-    a {
-      padding: 10px;
-      border-radius: 6px;
-      color: $bg-blue;
-      float: left;
-      text-decoration: none;
-      font-family: "Alegreya Sans SC", sans-serif;
-
-      &:hover {
-        padding: 10px;
-        border-radius: 3px;
-        background-color: $bg-blue;
-        text-shadow: 1px 1px 5px #000;
-        color: $mainColor;
-        box-shadow: inset 0px 0px 10px 2px rgba(81, 81, 81, .6);
-        float: left;
-        text-decoration: none;
-      }
-    }
-  }
-}
 
 .aciklamalar {
   font-family: "Lobster", cursive;
@@ -780,4 +734,146 @@ ul.menuAna {
     background-color: $color_gray;
     border: 1px solid $color_pink_swan;
     @include rounded(3px);
+
+}
+ul.menu {
+  font-size: 28px;
+  margin-top: 75px;
+  margin-left: 20px;
+  float: left;
+  display: block;
+  list-style: none;
+  height: 50px;
+	opacity: 0;
+	animation-delay: 1s;
+  animation: resim 2s forwards;
+
+  li {
+    float: left;
+    display: block;
+
+    a {
+      padding: 10px;
+      border-radius: 6px;
+      color: $bg-blue;
+      float: left;
+      text-decoration: none;
+      font-family: "Alegreya Sans SC", sans-serif;
+
+      &:hover {
+        padding: 10px;
+        border-radius: 3px;
+        background-color: $bg-blue;
+        text-shadow: 1px 1px 5px #000;
+        color: $mainColor;
+        box-shadow: inset 0px 0px 10px 2px rgba(81, 81, 81, .6);
+        float: left;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.menuAc{
+	display: none;
+}
+.menuMobil {
+	display: none;
+}
+
+@media (max-width: 700px) {
+	.menuAc{
+		font-size: 28px;
+	  float: left;
+	  list-style: none;
+		opacity: 0;
+		animation-delay: 1s;
+	  animation: resim 2s forwards;
+		display: block;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		margin: 10px;
+		color: $mainColor;
+	  height: 50px;
+		z-index: 2;
+		text-shadow: 1px 1px 2px rgba(81, 81, 81, 0.3) !important;
+		&:hover{
+			cursor: pointer;
+		  text-shadow: 1px 1px 4px rgba(81, 81, 81, 1) !important;
+		}
+	}
+	.menuMobil {
+		display: none;
+		position: absolute;
+		background-color: red;
+		top: 0px;
+		right: 0px;
+		width: 200px;
+		height: 100vh;
+		z-index: 1;
+		background-color: $mainColor;
+		box-shadow: 0px 0px 20px 2px rgba(71, 71, 71, 1);
+	}
+	ul.menu {
+	  font-size: 28px;
+		margin-left: 20px;
+		margin-right: 20px;
+	  display: block;
+		padding: 0px;
+	  list-style: none;
+		float: left;
+	  height: 50px;
+	  li {
+	    display: block;
+	    a {
+	      padding: 10px;
+	      border-radius: 6px;
+	      color: $bg-blue;
+				width: 140px;
+	      text-decoration: none;
+	      font-family: "Alegreya Sans SC", sans-serif;
+
+	      &:hover {
+	        padding: 10px;
+	        border-radius: 3px;
+	        background-color: $bg-blue;
+	        text-shadow: 1px 1px 5px #000;
+	        color: $mainColor;
+	        box-shadow: inset 0px 0px 10px 2px rgba(81, 81, 81, .6);
+	        text-decoration: none;
+	      }
+	    }
+	  }
+	}
+	.ortala{
+		width: 90%;
+		padding-top: 15px;
+	}
+	.resim{
+		float: none;
+		margin-top: 0px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.aciklamalar {
+		text-align: center;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 5px;
+	}
+	@keyframes orta {
+	  0% {
+	    height: 0px;
+	    margin-top: 125px;
+	  }
+	  100% {
+	    height: 250px;
+	    margin-top: 10px;
+	  }
+	}
+	.pc {
+		display: none;
+	}
 }
