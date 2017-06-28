@@ -2,12 +2,61 @@
 <html>
   {% include head.html %}
   <body>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        i = 0;
+        $('.menuAc').css({
+          'color': 'rgba(52, 152, 219, 1)'
+        });
+        $('.menuAc').click(function(){
+          $(this).next('.menuMobil').animate({width:'toggle'},350);
+          if (i%2==0) {
+            $('.footer').css({
+              'filter'         : 'blur(5px)'
+            });
+            $('.yazilar').css({
+              'filter'         : 'blur(5px)'
+            });
+            $('.ust').css({
+              'filter'         : 'blur(5px)'
+            });
+            $('ul.menu').css({
+              'animation-duration': '0.1s'
+            });
+            i++;
+          }
+          else {
+            $('.footer').css({
+              'filter'         : 'blur(0px)'
+            });
+            $('.yazilar').css({
+              'filter'         : 'blur(0px)'
+            });
+            $('.ust').css({
+              'filter'         : 'blur(0px)'
+            });
+            i++;
+          }
+
+        });
+      });
+    </script>
+    <div class="menuAc">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <div class="menuMobil">
+      {% include nav-home.html %}
+    </div>
     <div class="ust">
       <div class="ortalaAna">
         <div class="baslikAna">
           {{ site.title }}
         </div>
-        {% include nav.html %}
+
+        <div class="pc">
+          {% include nav.html %}
+        </div>
       </div>
     </div>
     <div class="ortalaAna">

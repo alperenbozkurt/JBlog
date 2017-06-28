@@ -8,7 +8,7 @@
         i = 0;
         $('.menuAc').click(function(){
 
-          $(this).next('.menuMobil').toggle();
+          $(this).next('.menuMobil').animate({width:'toggle'},350);
           if (i%2==0) {
             $('.baslik').css({
               'filter'         : 'blur(5px)'

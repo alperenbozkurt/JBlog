@@ -173,7 +173,8 @@ body {
 }
 
 .yazi, .yaziUzun {
-  margin-right: 10px;
+  margin-right: 5px;
+	margin-left: 5px;
   margin-top: 10px;
   background-color: $mainColor;
   border-radius: 3px;
@@ -518,20 +519,21 @@ ul.menuAna {
 /* Scrollbar */
 
 ::-webkit-scrollbar {
-  width: 8px;
+	height: 6px;
+	width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(195, 84, 0);
-  border-radius: 15;
-
+  background-color: $mainColor;
+	border-radius: 3px;
   &:hover {
-    background-color: rgb(230, 126, 34);
+		background-color: #2980b9;
+		box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6);
   }
 }
 
 ::-webkit-scrollbar-track {
-  background-color: rgb(158, 158, 158);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /* End Scrollbar */
@@ -780,7 +782,17 @@ ul.menu {
 .menuMobil {
 	display: none;
 }
-
+@media (min-width: 700px) and (max-width: 1000px) {
+	.ortala{
+		width: 90%;
+	}
+	.ortalaAna{
+		width: 100%;
+	}
+	.yazilar{
+		width: 100%;
+	}
+}
 @media (max-width: 700px) {
 	.menuAc{
 		font-size: 28px;
@@ -849,6 +861,15 @@ ul.menu {
 	.ortala{
 		width: 90%;
 		padding-top: 15px;
+	}
+	.ortalaAna{
+		width: 100%;
+	}
+	.yazilar{
+		width: 100%;
+	}
+	.yazibilgisi{
+		display: none;
 	}
 	.resim{
 		float: none;
