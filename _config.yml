@@ -54,6 +54,11 @@ youtube: username
 # paginate: 5
 # paginate_path: "blog/:num/"
 
+
+# Comments
+disqus_shortname: bozkurttalperen
+
+
 # Gems
 gems:
   - jekyll-mentions
