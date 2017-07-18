@@ -5,7 +5,7 @@ description:    "JBlog is a minimal, one column and blue jekyll theme for your b
 picture:        'assets/img/profile.png'
 locale:         en_US
 url:            https://alperenbozkurt.github.io/JBlog
-disqus_shortname: alperenbozkurt-net
+
 
 # Jekyll
 permalink:      /:title/
@@ -57,7 +57,7 @@ youtube: username
 
 
 # Comments
-
+disqus_shortname: alperenbozkurt-net
 
 
 # Gems
