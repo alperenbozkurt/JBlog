@@ -71,11 +71,7 @@
           </div>
         </div>
         {% include scripts.html %}
-
-        {% if site.disqus_shortname %}
-        <section id="disqus_thread" class="animated fadeInUp"></section>
-        <!-- /#disqus_thread -->
-        {% endif %}
+        {% include disqus_comments.html %}
       </div>
     </div>
     {% include footer.html %}
