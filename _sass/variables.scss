@@ -1,4 +1,28 @@
-//colors
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif");
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900");
+
+$font1: PT Serif, serif;
+$font2: PT Mono;
+$title-font   : Lobster, cursive;
+$menu-font    : Alegreya Sans SC, sans-serif;
+$main-font    : Roboto Slab, serif;
+
+// Colors
+$blue: #3498db;
+$orange: #e67e22;
+$red: #e74c3c;
+$white: #ecf0f1;
+$green: #2ecc71;
+$turko: #1abc9c;
+$purple: #9b59b6;
+$dark-blue: #34495e;
+
+$main-color: $white;
+$background-color: $blue;
+$thrid-color: rgba(52, 152, 219, 0.8);
+
 $color_0: #dedecb;
 $color_1: #000;
 $color_2: #fff;
@@ -19,9 +43,6 @@ $color_16: #fcfcfc;
 $color_17: #ccc;
 $color_18: #bbb;
 
-//fonts
-$font1: PT Serif, serif;
-$font2: PT Mono;
 
 //colors
 $bodycolor           : #D24D57;

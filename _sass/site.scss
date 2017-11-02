@@ -10,16 +10,8 @@
 	background-color: $color_12;
 	border-radius: 3px;
 }
-@import url("https://fonts.googleapis.com/css?family=Lobster");
-@import url("https://fonts.googleapis.com/css?family=Bree+Serif");
-@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900");
-
-$bg-blue: rgba(52, 152, 219, 1);
-$mainColor: #ecf0f1;
-$color2: rgba(52, 152, 219, .6);
-
 body {
-  background: $bg-blue;
+  background: $background-color;
   margin: 0px;
 }
 
@@ -28,7 +20,7 @@ body {
 }
 
 .orta {
-  background: $mainColor;
+  background: $main-color;
   height: 230px;
   width: auto;
   margin-top: 10px;
@@ -41,7 +33,7 @@ body {
 .baslik {
   font-size: 60px;
   text-align: center;
-  font-family: "Lobster", cursive;
+  font-family: $title-font;
   text-shadow: 1px 1px 5px #000;
   color: #FFF;
   margin-top: 130px;
@@ -64,7 +56,7 @@ body {
   height: 170px;
   float: left;
   border-radius: 90px;
-  background: $bg-blue;
+  background: $background-color;
   box-shadow: 0px 0px 20px 2px rgba(82, 82, 82, 1) inset;
 	opacity: 0;
 	animation: baslik;
@@ -80,12 +72,12 @@ body {
 
 
 .aciklamalar {
-  font-family: "Lobster", cursive;
+  font-family: $title-font;
   margin-left: 50;
   float: left;
   font-size: 20px;
   margin-top: 25px;
-  color: $color2;
+  color: $thrid-color;
 	opacity: 0;
 	animation-delay: 1s;
   animation-name: baslik;
@@ -136,7 +128,7 @@ body {
   animation-name: ustegel;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  background-color: $mainColor;
+  background-color: $main-color;
   width: auto;
   margin-top: 200px;
   height: 200px;
@@ -157,10 +149,10 @@ body {
 
 .baslikAna {
   font-size: 50px;
-  color: $bg-blue;
+  color: $background-color;
   text-shadow: rgba(255, 255, 255, .2) 3px 2px 3px;
   float: left;
-  font-family: "Lobster", cursive;
+  font-family: $title-font;
   animation-name: baslik;
   animation-duration: 1.2s;
   animation-fill-mode: forwards;
@@ -176,10 +168,10 @@ body {
   margin-right: 5px;
 	margin-left: 5px;
   margin-top: 10px;
-  background-color: $mainColor;
+  background-color: $main-color;
   border-radius: 3px;
   box-shadow: 0px 0px 10px 1px rgba(82, 82, 82, 0.1);
-  font-family: "Roboto Slab", serif;
+  font-family: $main-font;
   animation-name: baslik;
 	animation-delay: 0.7s;
   animation-duration: 1s;
@@ -191,7 +183,7 @@ body {
   width: 990px;
   margin-right: 10px;
   margin-top: 10px;
-  background-color: $mainColor;
+  background-color: $main-color;
   border-radius: 3px;
   box-shadow: 0px 0px 10px 1px rgba(82, 82, 82, .6);
   float: left;
@@ -201,7 +193,7 @@ body {
 
   h2 {
     margin-left: 15px;
-    color: $bg-blue;
+    color: $background-color;
     float: left;
     margin-top: 15px;
     margin-bottom: 5px;
@@ -210,7 +202,7 @@ body {
 
 .ustr h2 {
   margin-left: 15px;
-  color: $bg-blue;
+  color: $background-color;
   float: left;
   margin-top: 15px;
   margin-bottom: 5px;
@@ -226,7 +218,7 @@ body {
 
 .ustr h2 a, .yaziUzun h2 a {
   text-decoration: none;
-  color: $bg-blue;
+  color: $background-color;
   float: left;
   transition-property: color;
   transition-duration: 1s;
@@ -234,7 +226,7 @@ body {
 }
 
 .ustr h2 a:hover, .yaziUzun h2 a:hover {
-  color: $color2;
+  color: $thrid-color;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
@@ -244,7 +236,7 @@ body {
   font-size: 15px;
   color: rgba(82, 82, 82, .8);
   width: 100%;
-  font-family: "Roboto Slab", serif;
+  font-family: $main-font;
 }
 
 .yazilar {
@@ -263,7 +255,7 @@ body {
   float: right;
 	margin-right: 20px;
 	line-height: 60px;
-  font-family: "Lobster", cursive;
+  font-family: $title-font;
 }
 
 .yaziBilgisiUzun {
@@ -273,7 +265,7 @@ body {
   float: right;
   margin-top: 0px;
   margin-right: 50px;
-  font-family: "Lobster", cursive;
+  font-family: $title-font;
 }
 
 .yazi hr, .yaziUzun hr {
@@ -281,14 +273,14 @@ body {
   float: left;
   width: 95%;
   margin-left: 20px;
-  border: 1px solid $bg-blue;
-	color: $bg-blue;
+  border: 1px solid $background-color;
+	color: $background-color;
 }
 
 .widget {
   width: 280px;
   margin-top: 10px;
-  background-color: $mainColor;
+  background-color: $main-color;
   border-radius: 3px;
   box-shadow: 0px 0px 10px 1px rgba(82, 82, 82, .6);
   float: right;
@@ -299,8 +291,8 @@ body {
 
   h3 {
     margin-left: 15px;
-    color: $bg-blue;
-    font-family: "Lobster", cursive;
+    color: $background-color;
+    font-family: $title-font;
     margin-top: 15px;
     margin-bottom: 15px;
     animation-name: baslik;
@@ -312,12 +304,12 @@ body {
     height: 20px;
     margin: 5px;
     list-style: circle;
-    color: $bg-blue;
+    color: $background-color;
 
     a {
       text-decoration: none;
       margin: 5px;
-      color: $bg-blue;
+      color: $background-color;
       transition-property: color;
       transition-duration: .5s;
       transition-delay: 0s;
@@ -328,7 +320,7 @@ body {
         color: #000;
         border-radius: 5px;
         text-decoration: none;
-        background-color: $color2;
+        background-color: $thrid-color;
       }
     }
   }
@@ -337,7 +329,7 @@ body {
     width: 270px;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid $bg-blue;
+    border: 1px solid $background-color;
   }
 }
 
@@ -390,7 +382,7 @@ ul.menuAna {
   animation-name: baslik;
   animation-duration: 1.2s;
   animation-fill-mode: forwards;
-
+  width: 570px;
   li {
     float: left;
   }
@@ -400,9 +392,9 @@ ul.menuAna {
     padding-right: 15px;
     padding-bottom: 5px;
     padding-top: 5px;
-    color: $bg-blue;
+    color: $background-color;
     float: left;
-    font-family: "Alegreya Sans SC", sans-serif;
+    font-family: $menu-font;
     text-decoration: none;
     transition-property: color, border-color;
     transition-duration: 1s;
@@ -412,17 +404,17 @@ ul.menuAna {
       padding-left: 15px;
       padding-right: 15px;
       padding-top: 5px;
-      border-bottom: 5px solid $color2;
-      color: $color2;
+      border-bottom: 5px solid $thrid-color;
+      color: $thrid-color;
       float: left;
-      font-family: "Alegreya Sans SC", sans-serif;
+      font-family: $menu-font;
       text-decoration: none;
     }
   }
 }
 
 .secili {
-  border-bottom: 5px solid $color2;
+  border-bottom: 5px solid $thrid-color;
 
   &:hover {
     border-bottom: 0px solid rgba(0, 0, 0, .6);
@@ -443,8 +435,8 @@ ul.menuAna {
   float: left;
   margin-top: 20px;
   width: 100%;
-  font-family: "Lobster", cursive;
-  background: $mainColor;
+  font-family: $title-font;
+  background: $main-color;
   box-shadow: 0px 0px 10px 2px rgba(82, 82, 82, 1);
   animation-name: ft;
 	animation-delay: 1.2s;
@@ -466,7 +458,7 @@ ul.menuAna {
 .copy {
   font-size: 18px;
   margin-top: 20px;
-  color: $bg-blue;
+  color: $background-color;
   animation-name: baslik;
   animation-duration: 1.2s;
   animation-fill-mode: forwards;
@@ -524,7 +516,7 @@ ul.menuAna {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: $mainColor;
+  background-color: $main-color;
 	border-radius: 3px;
   &:hover {
 		background-color: #2980b9;
@@ -550,7 +542,7 @@ ul.menuAna {
 }
 
 .program {
-  background-color: $mainColor;
+  background-color: $main-color;
   width: 220px;
   margin: 10px;
   box-shadow: 0px 0px 10px 1px rgba(82, 82, 82, .6);
@@ -583,15 +575,15 @@ ul.menuAna {
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: "Alegreya Sans SC", sans-serif;
+  font-family: $menu-font;
 	a {
-		color: $bg-blue;
+		color: $background-color;
 		transition-property: color;
 		transition-duration: .5s;
 		transition-delay: 0s;
 		&:hover {
 			cursor: pointer;
-			color: $color2;
+			color: $thrid-color;
 		}
 	}
 }
@@ -605,7 +597,7 @@ ul.menuAna {
     margin-left: 30px;
     display: inline-block;
     padding: 5px;
-    border: 2px solid $bg-blue;
+    border: 2px solid $background-color;
     border-radius: 3px;
     text-decoration: none;
     transition-property: background-color;
@@ -614,8 +606,8 @@ ul.menuAna {
 
     &:hover {
       cursor: pointer;
-      background-color: $bg-blue;
-      color: $mainColor;
+      background-color: $background-color;
+      color: $main-color;
     }
   }
 }
@@ -645,7 +637,7 @@ ul.menuAna {
   width: 990px;
   box-shadow: 0px 0px 10px 1px rgba(82, 82, 82, .6);
   border-radius: 3px;
-  background-color: $mainColor;
+  background-color: $main-color;
   animation-name: baslik;
   animation-duration: 1.3s;
   animation-fill-mode: forwards;
@@ -659,8 +651,8 @@ ul.menuAna {
   h2 {
     padding-top: 20px;
     padding-left: 20px;
-    color: $bg-blue;
-    font-family: "Lobster", cursive;
+    color: $background-color;
+    font-family: $title-font;
   }
 
   p {
@@ -677,8 +669,8 @@ ul.menuAna {
 
   h3 {
     padding-left: 10px;
-    color: $bg-blue;
-    font-family: "Lobster", cursive;
+    color: $background-color;
+    font-family: $title-font;
   }
 
   p {
@@ -702,7 +694,7 @@ ul.menuAna {
 		margin: 5px;
 		margin-top: 30px;
 		padding: 5px;
-		color: $mainColor;
+		color: $main-color;
 	  text-shadow: 1px 1px 5px #000;
 		transition-property: text-shadow;
 	  transition-duration: 0.2s;
@@ -716,7 +708,7 @@ ul.menuAna {
 .sosyal {
 	.fa {
 		margin-top: 10px !important;
-		color: $bg-blue !important;
+		color: $background-color !important;
 	  text-shadow: 1px 1px 1px rgba(81, 81, 81, 0.3) !important;
 		&:hover{
 		  text-shadow: 1px 1px 4px rgba(81, 81, 81, 1) !important;
@@ -755,17 +747,17 @@ ul.menu {
     a {
       padding: 10px;
       border-radius: 6px;
-      color: $bg-blue;
+      color: $background-color;
       float: left;
       text-decoration: none;
-      font-family: "Alegreya Sans SC", sans-serif;
+      font-family: $menu-font;
 
       &:hover {
         padding: 10px;
         border-radius: 3px;
-        background-color: $bg-blue;
+        background-color: $background-color;
         text-shadow: 1px 1px 5px #000;
-        color: $mainColor;
+        color: $main-color;
         box-shadow: inset 0px 0px 10px 2px rgba(81, 81, 81, .6);
         float: left;
         text-decoration: none;
@@ -780,18 +772,7 @@ ul.menu {
 .menuMobil {
 	display: none;
 }
-@media (min-width: 700px) and (max-width: 1000px) {
-	.ortala{
-		width: 90%;
-	}
-	.ortalaAna{
-		width: 100%;
-	}
-	.yazilar{
-		width: 100%;
-	}
-}
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
 	.menuAc{
 		font-size: 28px;
 	  float: left;
@@ -804,7 +785,7 @@ ul.menu {
 		top: 0px;
 		right: 0px;
 		margin: 10px;
-		color: $mainColor;
+		color: $main-color;
 	  height: 50px;
 		z-index: 2;
 		text-shadow: 1px 1px 2px rgba(81, 81, 81, 0.3) !important;
@@ -822,7 +803,7 @@ ul.menu {
 		width: 200px;
 		height: 100vh;
 		z-index: 1;
-		background-color: $mainColor;
+		background-color: $main-color;
 		box-shadow: 0px 0px 20px 2px rgba(71, 71, 71, 1);
 	}
 	ul.menu {
@@ -839,17 +820,17 @@ ul.menu {
 	    a {
 	      padding: 10px;
 	      border-radius: 6px;
-	      color: $bg-blue;
+	      color: $background-color;
 				width: 140px;
 	      text-decoration: none;
-	      font-family: "Alegreya Sans SC", sans-serif;
+	      font-family: $menu-font;
 
 	      &:hover {
 	        padding: 10px;
 	        border-radius: 3px;
-	        background-color: $bg-blue;
+	        background-color: $background-color;
 	        text-shadow: 1px 1px 5px #000;
-	        color: $mainColor;
+	        color: $main-color;
 	        box-shadow: inset 0px 0px 10px 2px rgba(81, 81, 81, .6);
 	        text-decoration: none;
 	      }
