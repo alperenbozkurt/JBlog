@@ -54,7 +54,8 @@ $dark-blue: #34495e;
 $main-color: $white;
 $background-color: $blue;
 $thrid-color: rgba(52, 152, 219, 0.8);
-'''
+```
+
 $main-color is panels background color.
 $background-color is background, buttons, links color.
 $thrid-color is opacity version of background color.
