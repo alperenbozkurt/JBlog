@@ -36,7 +36,7 @@ body {
   font-family: $title-font;
   text-shadow: 1px 1px 5px #000;
   color: #FFF;
-  margin-top: 130px;
+  margin-top: $top-margin;
 	opacity: 0;
   animation-name: baslik;
 	animation-delay: 1.2s;
@@ -875,5 +875,8 @@ ul.menu {
 	}
 	.pc {
 		display: none;
+	}
+	.baslik {
+		margin-top: $top-margin-mobile;
 	}
 }
