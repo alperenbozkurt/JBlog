@@ -1,10 +1,10 @@
 # Site
-title:          JBlog
-bio:            'Just a simple Jekyll theme'
-description:    "JBlog is a minimal, one column and blue jekyll theme for your blog."
+title:          Yohan's Blog
+bio:            'Meet Yohan Malshika'
+description:    "Blogger | Undergraduate | Developer "
 picture:        'assets/img/profile.png'
 locale:         en_US
-url:            https://alperenbozkurt.github.io/JBlog
+url:            https://yohanym95.github.io/JBlog
 
 
 # Jekyll
@@ -25,7 +25,7 @@ sass:
 # if you don't have any of social below, comment the line.
 #email:
 twitter: username
-facebook: username
+facebook: Yohan Malshika
 #google:
   #plus: #username
   #analytics:
@@ -33,18 +33,18 @@ facebook: username
   #ad-client:
   #ad-slot:
 #bing-verify:
-github: username
-stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-linkedin: username
+github: yohanym95
+stackoverflow: 8992732/yohan-malshika
+linkedin: Yohan Malshika
 #xing: username
-instagram: username
-lastfm: username
-tumblr: username
+instagram: pantha_ym
+#lastfm: username
+#tumblr: username
 #pinterest: username
 #foursquare: username
-steam: username
+#steam: username
 #dribbble: username
-youtube: username
+#youtube: username
 #soundcloud: username
 #weibo: username
 #flickr: username
