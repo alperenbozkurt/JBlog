@@ -11,7 +11,7 @@ If you like this theme or using it, please give a **star** for motivation.
 ![Home Page](/assets/img/screenshot-home.png)    
 ![Post Page](/assets/img/screenshot-post.png)
 
-See a [live version of JBlog](http://alperenbozkurt.net/JBlog) hosted on GitHub.
+See a [live version of JBlog](http://alperenbozkurt.net/) hosted on GitHub.
 
 ## Getting Started
 
